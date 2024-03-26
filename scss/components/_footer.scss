@@ -1,0 +1,21 @@
+footer{
+    ol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    frame{
+        width: 200px;
+        height: 200px;
+    }
+    }

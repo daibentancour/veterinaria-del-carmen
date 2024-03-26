@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../scss/main.scss">
     <title>veterinaria del carmen</title>
 </head>
 
@@ -14,71 +15,58 @@
         <nav>
             <ul>
                 <li>
-                    <a href="./../pages/inicio.html">inicio</a>
+                    <a href="./../index.html">Inicio</a>
+                <li>
+                    <a href="./../pages/quienes-somos.html">Quienes Somos</a>
                 </li>
                 <li>
-                    <a href="./../pages/contacto.html">contacto</a>
+                    <a href="./../pages/productos.html">Productos</a>
                 </li>
-                <li>
-                    <a href="./../pages/quienes-somos.html">quienes somos</a>
-                </li>
-                <li>
-                    <a href="./../pages/productos.html">productos</a>
-                </li>
+                <LI>
+                    <a href="./productos.html">Productos</a>
+                </LI>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="servicios">
-            <section class="clinica">
-                <div>
-                    <h2>atencion clinica</h2>
-                    <img src="./../img/atencion clinica.jpg" alt="atencion veterinaria">
+    <main class="servicios">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" servicios>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./../img/atencion clinica.jpg" alt="First slide">
                 </div>
-            </section>
-            <section class="cirugias">
-                <div>
-                    <h2>cirugias</h2>
-                    <img src="./../img/cirugias.jpg" alt="cirugias">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./../img/cardio2.jpg" alt="Second slide">
                 </div>
-            </section>
-            <section class="ecografias">
-                <div>
-                    <h2>ecografias</h2>
-                    <img src="./../img/ecografia.jpg" alt="ecografias">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./../img/cirugias.jpg" alt="Third slide">
                 </div>
-            </section>
-            <section class="cardiologia">
-                <div>
-                    <h2>cardiologia</h2>
-                    <img src="./../img/cardiologia.jpg" alt="cardiologia">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./../img/ecografia.jpg" alt="fourth slide">
                 </div>
-            </section>
-            <section class="endo">
-                <div>
-                    <h2>endocrinologia</h2>
-                    <img src="./../img/endocrinologia.jpg" alt="endocrinologia">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./../img/peluqueria.jpg" alt="fifth slide">
                 </div>
-            </section>
-            <section class="radio">
-                <div>
-                    <h2>radiologia</h2>
-                    <img src="./../img/radiologia.jpg" alt="radiologia">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./../img/oncologia.jpg" alt="sixth slide">
                 </div>
-            <section class="onco">
-                <div>
-                    <h2>oncologia</h2>
-                    <img src="./../img/oncologia.jpg" alt="oncologia">
-                </div>
-            </section>
-            </section> 
-            <section class="pelu">
-                <div>
-                    <h2>baños y peluqueria</h2>
-                    <img src="./../img/peluqueria.jpg" alt="peluqueria">
-                </div>
-            </section>
-        </section>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
     </main>
     <footer>
         <ol>

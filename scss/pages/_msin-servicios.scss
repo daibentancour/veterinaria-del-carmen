@@ -1,0 +1,12 @@
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    .carrousel-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+}

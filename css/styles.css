@@ -9,6 +9,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: dimgrey;
 }
 
 header img{
@@ -30,6 +31,62 @@ header nav ul li a{
 }
 nav ul{
     list-style: none;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.carrousel-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.div-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagen-fondo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+        background-image: url(./../img/mision.jpg);
+        background-size: cover;
+        grid-template-columns: 200px;
+        justify-content: center;
+}
+.imagen-fondo div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: black;
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ol{
@@ -54,12 +111,7 @@ iframe{
     width: 200px;
     height: 200px;
 }
-.imagen-fondo{
-    background-image: url(./../img/mision.jpg);
-    background-size: cover;
-    grid-template-columns: 200px;
-    justify-content: center;
-}
+
 
 
 .contenedor{
@@ -113,7 +165,24 @@ iframe{
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px){
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productos img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+@media screen and (min-width: 1024px){
     header{
         flex-direction: row;
         justify-content: space-between;
@@ -125,31 +194,61 @@ iframe{
         display: flex;
         column-gap: 10px;
     }
+main img{
+    object-fit: cover;
+}
 
-    .contenedor{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
+.inicio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.inicio div{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+}
 
-    .hijo1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.inicio div img{
+    width: 200px;
+    height: 200px
+    
+}
 
-    .hijo2{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
 
-    .hijo3{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+.productos section div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    margin-top: 20px;
+}
 
+
+.imagen-fondo{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 50px;
+    font-size: larger;
+}
+
+.div-quienes{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: dimgrey;
+}
     footer ol{
         flex-direction: row;
         justify-content: space-between;
@@ -160,37 +259,10 @@ iframe{
         display: flex;
         column-gap: 5px;
     }
-    footwe img{
+    footer img{
         width: 100px;
     }
     }
 
 
-@media screen and (min-width: 1024px) {
-    .contenedor{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
-        "hijo3 hijo3"
-        "hijo1 hijo1"
-        "hijo2 hijo2";
-    }
-    .hijo1{
-        grid-area: hijo1;
-    }
-    .hijo2{
-        grid-area: hijo2;
-    }
-    .hijo3{
-        grid-area: hijo3;
-    }
-    .servicios{
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, auto);
-        padding: 15px;
-    }
-    .servicios img{
-        width: 200px;
-    }
-}
+

@@ -9,7 +9,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: dimgrey;
+    background: linear-gradient(to bottom, #be93c5, #7bc6cc);
 }
 
 header img{
@@ -32,6 +32,22 @@ header nav ul li a{
 nav ul{
     list-style: none;
 }
+.index{
+    background-image: url(./../img/bkg\ general.jpg);
+    object-fit: cover;
+}
+.col p{
+    font-size: 20px;
+    color: black;
+}
+.row{
+    margin: 20px;
+    padding: 15px;
+}
+.servi{
+    background-image: url(./../img/bkg\ general.jpg);
+    object-fit: cover;
+}
 
 .servicios{
     display: flex;
@@ -39,6 +55,19 @@ nav ul{
     align-items: center;
     justify-items: center;
 }
+.servicios div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.servicios div img{
+    width: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 
 .carrousel-inner{
     display: flex;
@@ -47,46 +76,31 @@ nav ul{
     justify-items: center;
 }
 
+.nosotros{
+    background-image: url(./../img/bkg\ general.jpg);
+    object-fit: cover;
+}
+
 .div-inicio{
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
-
-.imagen-fondo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-        background-image: url(./../img/mision.jpg);
-        background-size: cover;
-        grid-template-columns: 200px;
-        justify-content: center;
+.product{
+    background-image: url(./../img/bkg\ general.jpg);
+    object-fit: cover;
 }
-.imagen-fondo div{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.text-info{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    color: black;
-}
-
 .productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
 }
 
-.productos section div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container{
+    margin: 30px;
+}
+
+footer{
+    background: linear-gradient(to bottom, #be93c5, #7bc6cc);
 }
 
 footer ol{
@@ -112,7 +126,14 @@ iframe{
     height: 200px;
 }
 
-
+.whatsapp{
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+}
+.whatsapp{
+    width: 150px;
+}
 
 .contenedor{
     display: grid;
@@ -132,39 +153,6 @@ iframe{
 }
 
 
-.hijo1{
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-}
-
-.hijo2{
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-}
-
-.hijo3{
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-}
-
 .productos{
     display: flex;
     justify-content: center;
@@ -180,6 +168,10 @@ iframe{
     width: 100px;
     height: auto;
     margin: 10px;
+    border-radius: 5px;
+}
+.productos img:hover{
+    transform: rotate(10deg);
 }
 
 @media screen and (min-width: 1024px){
@@ -194,75 +186,49 @@ iframe{
         display: flex;
         column-gap: 10px;
     }
-main img{
-    object-fit: cover;
-}
+    .img1{
+        width: 800px;
 
-.inicio{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-}
-.inicio div{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.inicio div img{
-    width: 200px;
-    height: 200px
-    
-}
-
-.productos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 200px);
-}
-
-.productos section div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 400px);
-    margin-top: 20px;
-}
+    }
 
 
-.imagen-fondo{
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    padding: 50px;
-    font-size: larger;
-}
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
 
-.div-quienes{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-footer{
-    background-color: dimgrey;
-}
+    .servicios div img{
+        width: 300px;
+    }
+
+    .container{
+        background-image: url(./../img/mision.jpg);
+        background-size: cover;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        margin-top: 80px;
+        gap: 30px;
+    }
+
+    .productos div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px)
+    }
+    .productos div img{
+        width: 200px;
+    }
+
     footer ol{
         flex-direction: row;
         justify-content: space-between;
-        padding: 5px;
-    }
-
-    footer ol{
-        display: flex;
-        column-gap: 5px;
-    }
-    footer img{
-        width: 100px;
+        align-items: center;
+        padding: 15px;
     }
     }
-
-
-
